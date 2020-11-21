@@ -32,6 +32,7 @@ ChatBot::ChatBot(std::string filename)
     _image = new wxBitmap(filename, wxBITMAP_TYPE_PNG);
 }
 
+// 1 : destructor
 ChatBot::~ChatBot()
 {
     std::cout << "ChatBot Destructor" << std::endl;
@@ -46,6 +47,90 @@ ChatBot::~ChatBot()
 
 //// STUDENT CODE
 ////
+
+// 2 : copy constructor
+ChatBot::ChatBot(const ChatBot &source)
+{
+    std::cout << "ChatBot Copy Constructor" << std::endl;
+
+    _image = source._image;
+    _currentNode = source._currentNode;
+    _rootNode = source._rootNode;
+    _chatLogic = source._chatLogic;
+    std::cout << "COPYING content of instance " << &source << " to instance " << this << std::endl;
+}
+
+// 3 : copy assignment operator
+ChatBot &ChatBot::operator=(const ChatBot &source)
+{
+    std::cout << "ChatBot Copy Assignment Operator" << std::endl;
+
+    std::cout << "ASSIGNING content of instance " << &source << " to instance " << this << std::endl;
+    if (this == &source)
+        return *this;
+
+    // deallocate heap memory
+    if(_image != NULL) // Attention: wxWidgets used NULL and not nullptr
+    {
+        delete _image;
+        _image = NULL;
+    }
+
+    _image = source._image;
+    _currentNode = source._currentNode;
+    _rootNode = source._rootNode;
+    _chatLogic = source._chatLogic;
+
+    return *this;
+}
+
+// 4 : move constructor
+ChatBot::ChatBot(ChatBot &&source)
+{
+    std::cout << "ChatBot Move Constructor" << std::endl;
+
+    std::cout << "MOVING (c’tor) instance " << &source << " to instance " << this << std::endl;
+
+    _image = source._image;
+    _currentNode = source._currentNode;
+    _rootNode = source._rootNode;
+    _chatLogic = source._chatLogic;
+
+    source._image = nullptr;
+    source._currentNode = nullptr;
+    source._rootNode = nullptr;
+    source._chatLogic = nullptr;
+}
+
+// 5 : move assignment operator
+ChatBot &ChatBot::operator=(ChatBot &&source)
+{
+    std::cout << "ChatBot Move Assignment Operator" << std::endl;
+
+    std::cout << "MOVING (assign) instance " << &source << " to instance " << this << std::endl;
+
+    if (this == &source)
+        return *this;
+
+    // deallocate heap memory
+    if(_image != NULL) // Attention: wxWidgets used NULL and not nullptr
+    {
+        delete _image;
+        _image = NULL;
+    }
+
+    _image = source._image;
+    _currentNode = source._currentNode;
+    _rootNode = source._rootNode;
+    _chatLogic = source._chatLogic;
+
+    source._image = nullptr;
+    source._currentNode = nullptr;
+    source._rootNode = nullptr;
+    source._chatLogic = nullptr;
+
+    return *this;
+}
 
 ////
 //// EOF STUDENT CODE
