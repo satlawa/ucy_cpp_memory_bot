@@ -6,45 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatbot.cpp
-iostream
--
-random
--
-algorithm
--
-ctime
--
-chatlogic.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatlogic.h
-graphnode.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphnode.h
-graphedge.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphedge.h
-chatbot.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatbot.h
-
 /home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatbot.h
 wx/bitmap.h
 -
 string
 -
-
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatgui.cpp
-wx/filename.h
--
-wx/colour.h
--
-wx/image.h
--
-string
--
-chatbot.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatbot.h
-chatlogic.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatlogic.h
-chatgui.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatgui.h
 
 /home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatgui.h
 wx/wx.h
@@ -81,12 +47,6 @@ string
 -
 chatgui.h
 /home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatgui.h
-
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphedge.cpp
-graphnode.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphnode.h
-graphedge.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphedge.h
 
 /home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphedge.h
 vector
