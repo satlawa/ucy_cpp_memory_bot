@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatbot.cpp
-iostream
--
-random
--
-algorithm
--
-ctime
--
-chatlogic.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatlogic.h
-graphnode.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphnode.h
-graphedge.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphedge.h
-chatbot.h
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatbot.h
-
 /home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatbot.h
 wx/bitmap.h
 -
@@ -35,6 +17,30 @@ wx/wx.h
 -
 memory
 -
+
+/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatlogic.cpp
+fstream
+-
+sstream
+-
+iostream
+-
+vector
+-
+iterator
+-
+tuple
+-
+algorithm
+-
+graphedge.h
+/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphedge.h
+graphnode.h
+/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/graphnode.h
+chatbot.h
+/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatbot.h
+chatlogic.h
+/home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatlogic.h
 
 /home/philipp/Code/cpp/ucy_cpp_memory_bot/src/chatlogic.h
 vector
