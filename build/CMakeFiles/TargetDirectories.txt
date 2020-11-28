@@ -1,3 +1,0 @@
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/build/CMakeFiles/rebuild_cache.dir
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/build/CMakeFiles/edit_cache.dir
-/home/philipp/Code/cpp/ucy_cpp_memory_bot/build/CMakeFiles/membot.dir
